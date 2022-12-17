@@ -66,7 +66,7 @@ function addMeal(mealData, random = false) {
         </div>`;
 
     const btn = meal.querySelector(".meal-body .fav-btn");
-    
+
     // listening events on the click of a button 
     btn.addEventListener("click", () => {
         if (btn.classList.contains("active")) {
@@ -92,7 +92,8 @@ function addMealLS(mealId) {
 
     localStorage.setItem("mealIds", JSON.stringify([...mealIds, mealId]));
 }
-
+ 
+// remove meal 
 function removeMealLS(mealId) {
     const mealIds = getMealsLS();
 
@@ -101,13 +102,14 @@ function removeMealLS(mealId) {
         JSON.stringify(mealIds.filter((id) => id !== mealId))
     );
 }
-
+// get meal 
 function getMealsLS() {
     const mealIds = JSON.parse(localStorage.getItem("mealIds"));
 
     return mealIds === null ? [] : mealIds;
 }
 
+// fetch favourite meal 
 async function fetchFavMeals() {
     favoriteContainer.innerHTML = "";
 
@@ -120,7 +122,7 @@ async function fetchFavMeals() {
         addMealFav(meal);
     }
 }
-
+// addMealFav
 function addMealFav(mealData) {
     const favMeal = document.createElement("li");
 
