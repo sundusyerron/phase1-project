@@ -66,7 +66,8 @@ function addMeal(mealData, random = false) {
         </div>`;
 
     const btn = meal.querySelector(".meal-body .fav-btn");
-
+    
+    // listening events on the click of a button 
     btn.addEventListener("click", () => {
         if (btn.classList.contains("active")) {
             removeMealLS(mealData.idMeal);
