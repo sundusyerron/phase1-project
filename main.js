@@ -6,3 +6,7 @@ const mealInfoEl = document.getElementById("meal-info");
 const popupCloseBtn = document.getElementById("close-popup");
 const searchTerm = document.getElementById("search-term");
 const searchBtn = document.getElementById("search");
+
+// fuction defination 
+getRandomMeal();
+fetchFavMeals();
