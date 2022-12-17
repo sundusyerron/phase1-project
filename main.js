@@ -13,6 +13,7 @@ fetchFavMeals();
 
 // function implementation 
 async function getRandomMeal() {
+    // implementing fetch 
     const resp = await fetch(
         "https://www.themealdb.com/api/json/v1/1/random.php"
     );
