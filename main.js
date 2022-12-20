@@ -191,5 +191,17 @@ searchBtn.addEventListener("click", async () => {
 });
 
 popupCloseBtn.addEventListener("click", () => {
-    mealPopup.classList.add("hidden");
+    mealPopup.classList.add("hidden");    
 });
+
+function removeLogin() {
+    let x = document.getElementById("top")
+    let bt = document.getElementById("btn")
+
+    bt.addEventListener("submit", (e) => {
+        e.preventDefault()
+        x.style.display = "none"
+        // x.remove()
+    })
+}
+removeLogin()
