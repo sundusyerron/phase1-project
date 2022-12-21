@@ -29,7 +29,7 @@ git@github.com:sundusyerron/phase1-project.git
 
 Change Directory:
 
-(cd phase1_final_project)
+(cd phase1-project)
 
 (Optional) Open it in Visual Studio Code
 
